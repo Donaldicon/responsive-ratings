@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive rating</title>
+    <link rel="stylesheet" href="./output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body class="font-Overpass font-sans">
+    <main class="bg-gray-950 text-white flex justify-center items-center h-screen">
+
+        <!-- centering the div -->
+        <div class="bg-gray-800 w-[315px] p-6 rounded-2xl sm:w-[320px]">
+
+            <header class="h-8 w-8 rounded-full bg-[#272f38] flex items-center justify-center">
+                <!-- The star image goes here -->
+                <img src="../images/icon-star.svg" alt="icon" class="w-3">
+            </header>
+
+            <section class="mt-6">
+                <h1 class="text-[20px] mb-2">How did we do?</h1>
+                <p class="text-[13px] text-gray-400 w-[270px] sm:w-[270px] sm:text-[11px] leading-6">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+                <!-- for the ratings button -->
+                <div class="mt-4 w-[270px] flex justify-between items-center font-bold">
+                    <button id="box" class="box w-10 h-10 rounded-full flex justify-center items-center bg-gray-700 text-gray-500 text-[11px] transition hover:bg-orange-500 hover:text-white hover: cursor-pointer" onclick="changeColor(event)" value = "1">1</button>
+
+                    <button id="box" class="box w-10 h-10 rounded-full flex justify-center items-center bg-gray-700 text-gray-500 text-[11px] transition hover:bg-orange-500 hover:text-white hover: cursor-pointer" onclick="changeColor(event)" value = "2">2</button>
+                    
+                    <button id="box" class="box w-10 h-10 rounded-full flex justify-center items-center bg-gray-700 text-gray-500 text-[11px] transition hover:bg-orange-500 hover:text-white hover: cursor-pointer" onclick="changeColor(event)" value = "3">3</button>
+
+                    <button id="box" class="box w-10 h-10 rounded-full flex justify-center items-center bg-gray-700 text-gray-500 text-[11px] transition hover:bg-orange-500 hover:text-white hover: cursor-pointer" onclick="changeColor(event)" value = "4">4</button>
+
+                    <button id="box" class="box w-10 h-10 rounded-full flex justify-center items-center bg-gray-700 text-gray-500 text-[11px] transition hover:bg-orange-500 hover:text-white hover: cursor-pointer" onclick="changeColor(event)" value="5">5</button>
+                </div>
+            </section>
+
+            <footer class="mt-5">
+                <a href="thanks.html"><button class="w-[270px] text-[12px] py-2 rounded-3xl transition text-zinc-300 bg-orange-500 hover:text-orange-500 hover:bg-white hover: cursor-pointer">
+                    SUBMIT 
+                </button></a>
+            </footer>
+    </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
